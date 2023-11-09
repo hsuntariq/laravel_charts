@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', [chartController::class,'index'])->name('index');
+Route::get('/', [chartController::class, 'index']);

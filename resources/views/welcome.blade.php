@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
 
+    <head>
+        <style>
+            .chart{
+                width: 40%;
+                height: 40%;
+            }
+        </style>
     </head>
+
     <body>
 
 
 
 
         <h1>Hello</h1>
-        <div style="display:flex">
-        <div style="width: 60%;margin:auto">
+        <div class="chart">
             {!! $chart->container() !!}
         </div>
-        <div style="width: 60%;margin:auto">
-            {!! $chart2->container() !!}
-        </div>
-        </div>
-{!! $chart->script() !!}
-{!! $chart2->script() !!}
+        {!! $chart->script() !!}
 
 
 
